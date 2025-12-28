@@ -1,7 +1,7 @@
 class CodeGeneratorConfig:
     file_name:str="module_with_param"
-    required_headers:list[str]=["init","module","moduleparam","printk","kernal"]
-    file_design:str="mod"
+    required_headers:list[str]=["init","module","moduleparam","printk","kernel"]
+    file_design:str="std"
     init_function_name:str="start_func"
     cleanup_function_name:str="exit_func"
     author_name:str="Deepak"
