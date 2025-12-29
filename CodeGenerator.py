@@ -19,7 +19,7 @@ def generate_file()->None:
 
         if CodeGeneratorConfig.file_design!="mod":
             #Creating the init function
-            c_file.write("int module_init(void)\n");
+            c_file.write("int init_module(void)\n");
             c_file.write("\n{\n")
             c_file.write("\t/*USER CODE BEGIN*/\n")
             c_file.write("\t/*USER CODE END*/\n")
@@ -29,7 +29,7 @@ def generate_file()->None:
             c_file.write("\n"*3)
 
             #Creating the exit function 
-            c_file.write("void module_exit(void)\n")
+            c_file.write("void cleanup_module(void)\n")
             c_file.write("\n{\n")
             c_file.write("\t/*USER CODE BEGIN*/\n")
             c_file.write("\t/*USER CODE END*/\n")
